@@ -1,6 +1,6 @@
-#' Biased Dice Experiment
+#' Unfair Dice Experiment
 #'
-#' Roll dice to determine which, if any, is biased.
+#' Roll dice to determine which, if any, is unfair.
 #'
 #' @param die \code{"A"} or \code{"B"}. The die you wish to roll.
 #' @param times Integer. The number of times you'd like to roll the die.
@@ -26,12 +26,12 @@ roll_die <- function(die, times = 1) {
     stop("Number of rolls should be less than or equal to 2000")
   }
 
-  # For "A" roll an unbiased die.
+  # For "A" roll a fair die.
   if (die == "A") {
     rolls <- sample(1:6, size = times, replace = TRUE)
   }
 
-  # For "B" roll a biased die.
+  # For "B" roll an unfair die.
   if (die == "B") {
     s_unfair <- 0.22
     s_fair <- (1 - s_unfair)/5
