@@ -2,7 +2,7 @@
 % Please edit documentation in R/roll_die.R
 \name{roll_die}
 \alias{roll_die}
-\title{Unfair Dice Experiment}
+\title{Biased Dice Experiment}
 \usage{
 roll_die(die, times = 1)
 }
@@ -12,7 +12,7 @@ roll_die(die, times = 1)
 \item{times}{Integer. The number of times you'd like to roll the die.}
 }
 \description{
-Roll dice to determine which, if any, is unfair.
+Roll dice to determine which, if any, is biased.
 }
 \examples{
 # Roll a die once
